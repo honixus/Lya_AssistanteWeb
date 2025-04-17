@@ -1,43 +1,55 @@
-# Lya – Assistante Numérique de Guidance Web
 
-🏆 **Prix du Jury – Hackathon du MIC 2025**
-by 🔥 **Les PotoFeux**
+<h1 style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+  <div style="flex-grow: 1; text-align: left;">
+    <img src="./lyaPng.png" alt="logo de Lya notre assistante de guidance web" width="50" />
+    Lya – Assistante Numérique de Guidance Web
+  </div>
 
-## 🧠 Qu’est-ce que Lya ?
+</h1>
 
-**Lya** est une assistante virtuelle conçue pour guider les utilisateurs pas à pas dans leurs démarches en ligne. Elle simplifie l'accès aux sites web, notamment administratifs ou complexes, en expliquant chaque étape de manière claire et accessible directement sur la page.
+  <p><strong>🏆 Prix du Jury – Hackathon du MIC 2025</strong><br>
+  </p>
 
-Notre objectif : rendre le web plus humain et plus inclusif, en favorisant l’autonomie numérique pour tous et toutes.
+  <hr style="width: 80%; margin: 20px auto;"/>
 
----
+  <!-- SECTION DESCRIPTION -->
 
-## 💡 Fonctionnalités clés
+  <h2>🧠 Qu’est-ce que Lya ?</h2>
 
-- 🔍 **Analyse des pages web en temps réel**  
-  Lya comprend la structure d’une page et identifie les éléments clés à guider.
+  <p><strong>Lya</strong> est une assistante virtuelle conçue pour guider les utilisateurs pas à pas dans leurs démarches en ligne.</p>
+  <p>Elle simplifie l'accès aux sites web, notamment administratifs ou complexes, en expliquant chaque étape de manière claire et accessible directement sur la page.</p>
 
-- 💬 **Assistance conversationnelle**  
-  Une interface de chat simple et intuitive pour poser des questions et recevoir des réponses adaptées.
+  <p><strong>🎯 Notre objectif :</strong> rendre le web plus humain et plus inclusif, en favorisant l’autonomie numérique pour tous et toutes.</p>
 
-- 🧭 **Guidage pas à pas**  
-  Lya propose des instructions étape par étape lors de tâches plus complexes pour guider l'utilisateur.
+  <hr style="width: 80%; margin: 20px auto;"/>
+  <h2>💡 Fonctionnalités clés</h2>
 
-- 🌐 **Accessibilité et inclusivité**  
-  Pensée pour tous les niveaux de maîtrise numérique.
+  <ul style="list-style-type: none; padding: 0; text-align: left;">
+    <li>🔍 <strong>Analyse des pages web en temps réel :</strong> Lya comprend la structure d’une page et identifie les éléments clés à guider.</li>
+    <li>💬 <strong>Assistance conversationnelle :</strong> Une interface de chat simple et intuitive pour poser des questions et recevoir des réponses adaptées.</li>
+    <li>🧭 <strong>Guidage pas à pas :</strong> Lya propose des instructions étape par étape lors de tâches plus complexes pour guider l'utilisateur.</li>
+    <li>🌐 <strong>Accessibilité et inclusivité :</strong> Pensée pour tous les niveaux de maîtrise numérique.</li>
+  </ul>
 
+  <hr style="width: 80%; margin: 20px auto;"/>
 
-## 🏁 Objectifs à venir ?
+  <!-- SECTION OBJECTIFS -->
 
-- Faire une Lya V2 qui s'adapte encore mieux à tout types de pages 
+  <h2>🏁 Objectifs à venir</h2>
 
+  <p>🚧 <strong>Prochaine étape : Lya V2</strong> – Plus fluide, plus intelligente, plus universelle. On veut que Lya s’adapte à <strong>toutes</strong> les pages web, même les plus obscures !</p>
 
-## 👥 Équipe
+  <p>🧪 Tests utilisateurs, IA plus fine, meilleure UX : on est en route pour une version encore plus ambitieuse.</p>
 
-- [Julien Decock]()
-- [Marcel Angielczyk](https://www.linkedin.com/in/marcel-angielczyk/)
-- [Maximilien Montier](https://www.linkedin.com/in/maximilien-montier-383666318/)  
-- [Thomas Gillet](www.linkedin.com/in/thomas-gillet-4245a1294)
-- 
-![ImageDeNotreEquipe](./assets/photoDeGroupe.png)
+  <hr style="width: 80%; margin: 20px auto;"/>
 
+  <!-- SECTION ÉQUIPE -->
 
+  <h2>👥 L’équipe derrière Lya</h2>
+
+  <ul style="list-style-type: none; padding: 0;">
+  <li><a href="https://www.linkedin.com/in/julien-decock-ab619b32b">Julien Decock</a></li>
+  <li><a href="https://www.linkedin.com/in/marcel-angielczyk/">Marcel Angielczyk</a></li>
+  <li><a href="https://www.linkedin.com/in/maximilien-montier-383666318/">Maximilien Montier</a></li>
+  <li><a href="https://www.linkedin.com/in/thomas-gillet-4245a1294">Thomas Gillet</a></li>
+  <li><a href="https://www.linkedin.com/in/emilien-marquegnies/">Emilien Marquegnies</a></li>
