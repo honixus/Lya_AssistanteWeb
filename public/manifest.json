@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Lya Assistant",
+  "short_name": "Lya",
+  "icons": {
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "version": "1.0",
+  "description": "A Chrome extension with a side panel that opens at startup.",
+  "permissions": ["scripting", "activeTab","sidePanel","storage"],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["styles.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": ["<all_urls>"],
+  "action": {}
+}

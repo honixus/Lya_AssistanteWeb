@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot Sidepanel</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/settingstyle.css" />
+  </head>
+  <body>
+    <div id="chatInterface" class="interface-container">
+      <div class="chat-header">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          fill="currentColor"
+        >
+          <path
+            d="M9.5,13A1.5,1.5,0,1,1,8,11.5,1.5,1.5,0,0,1,9.5,13ZM23,10a10.641,10.641,0,0,1-1.453,5.564c.156.315.717,2.1,1.4,4.12a1,1,0,0,1-.053.763C22.6,21.046,20.925,23,12,23S1.405,21.046,1.105,20.447a1,1,0,0,1-.053-.763L2.713,14.7a2.982,2.982,0,0,1-.331-5.215,5.022,5.022,0,0,1-.277-4.934A3.067,3.067,0,0,1,5.674,2.834C6.474,2.073,8.264,1,12,1,18.794,1,23,5.672,23,10ZM5.831,20.541a9.021,9.021,0,0,1-2.016-2.822l-.657,1.97A8.46,8.46,0,0,0,5.831,20.541Zm12.538-3.652c-4.739-.627-8.214-4.022-10.336-8.243C5.916,11.507,3,10.431,3,12a1,1,0,0,0,1,1,1,1,0,0,1,1,1,7,7,0,0,0,13.369,2.889Zm2.474,2.8-.657-1.969a8.978,8.978,0,0,1-2.015,2.82A8.442,8.442,0,0,0,20.843,19.689ZM21,10c0-3.367-3.441-7-9-7C6.231,3,7.006,5.62,5.553,4.895A1.14,1.14,0,0,0,3.9,5.447a3.274,3.274,0,0,0,.451,3.407l.018,0A3.6,3.6,0,0,0,6.987,6.138c-.03.12,0-1.13,1.016-1.13,1.609,0,2.4,8.762,10.58,9.877.315.043.638.073.971.087A8.319,8.319,0,0,0,21,10Z"
+          ></path>
+        </svg>
+        &nbsp; Lya
+        <button class="settings-button" id="settingsButton">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+          >
+            <path
+              d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.07.62-.07.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="chat-container" id="chatContainer">
+        <div class="message bot-message">
+          Bonjour <span id="user-name-display"></span> ! 👋 Je suis Lya, votre
+          guide virtuelle. Dites-moi ce que vous souhaitez faire sur Internet,
+          et je serai heureuse de vous aider !
+        </div>
+
+        <div class="typing-indicator" id="typingIndicator">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+
+      <div class="chat-input-container">
+        <textarea
+          class="chat-input"
+          id="userInput"
+          placeholder="Votre message..."
+          rows="1"
+        ></textarea>
+        <button id="sendButton" class="send-button">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.66,12a2,2,0,0,1-1.14,1.81L5.87,20.75A2.08,2.08,0,0,1,5,21a2,2,0,0,1-1.82-2.82L5.46,13H11a1,1,0,0,0,0-2H5.46L3.18,5.87A2,2,0,0,1,5.86,3.25h0l14.65,6.94A2,2,0,0,1,21.66,12Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="settingsInterface" class="interface-container hidden">
+      <div class="settings-header">
+        <button id="backButton" class="back-button" aria-label="Back to chat">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+          >
+            <path
+              d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+        <h2>Paramètres</h2>
+      </div>
+      <div class="settings-content">
+        <div class="setting-item">
+          <label for="userName">Votre Prénom</label>
+          <div class="setting-control">
+            <input
+              type="text"
+              id="userName"
+              class="text-input"
+              placeholder="Entrez votre prénom"
+            />
+          </div>
+        </div>
+        <div class="setting-item">
+          <label for="fontSizeSlider">Taille de la police</label>
+          <div class="setting-control">
+            <input
+              type="range"
+              id="fontSizeSlider"
+              min="12"
+              max="24"
+              value="16"
+            />
+            <span id="fontSizeValue">16</span>
+          </div>
+        </div>
+        <div class="setting-item">
+          <label for="moreInfo">Plus D'informations</label>
+          <div class="setting-control">
+            <textarea id="moreInfo" class="auto-resize-textarea"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modalOverlay" class="modal-overlay hidden">
+      <div class="modal">
+        <p>Assistance en cours ...</p>
+        <button id="cancelButton" class="cancel-button">Annuler</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/settings.js"></script>
+  </body>
+</html>
